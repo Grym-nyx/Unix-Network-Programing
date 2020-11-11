@@ -1,0 +1,14 @@
+Client: GET
+Server: Enter file name:
+Client: dog
+Server: File not found
+(if file doesn't exist, client quits, server quits)
+Client: yan
+(if file exists, server confirms. Server sends file size)
+Server: File name: yan | File size: 5050 bytes
+(if file is sent successfully, client confirms)
+Client: Enter file name: 
+Client: QUIT 
+Server: Bye 
+
+
