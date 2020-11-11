@@ -1,0 +1,20 @@
+ Lưu ý: Server nhận một tham số khi chạy là port number 
+        Client nhận 2 tham số là host name và port number
+        Cần điền đủ tham số khi chạy trên terminal 
+ Cách chạy chương trình với file json:
+ B1: compile
+            javac -cp .:json-20200518.jar Client.java   
+            javac -cp .:json-20200518.jar Server.java   
+            javac -cp .:json-20200518.jar Protocol.java   
+ B2: run 
+            java -cp .:json-20200518.jar Server <port> 
+            java -cp .:json-20200518.jar Client <host name> <port>
+            
+ B3: (nếu 2 bước trên mà chương trình vẫn báo lỗi org.json) 
+     copy file json-20200518.jar tại thư mục vào vị trí, vd: /usr/share/java 
+     export JSON_JAVA=/usr/share/java 
+     export CLASSPATH=$CLASSPATH:$JSON_JAVA/json-20200518.jar:.
+     
+     chạy lại từ bước 1
+            
+Face: https://www.facebook.com/profile.php?id=100005419726566
