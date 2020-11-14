@@ -1,0 +1,24 @@
+Client: HELLO
+Server: Connection accepted. Enter file name:
+Client: dog
+Server: Invalid file name, try again
+Client: cat
+Server: file name: cat | file size: 50kb
+Client: DOWNLOAD
+Server: file downloaded!
+Client: numu 
+Server: Invalid file name, try again
+Client: QUIT 
+Closing connection...
+
+
+Mot vai luu y khi lam bai: 
+1. Du lieu duoc truyen di tu phia server se co dang: "header" + "data"
+        header: do dai tinh theo byte cua data
+        data: noi dung muon gui
+2. DataInputStream de doc du lieu tu socket
+3. DataOutputStream de ghi du lieu vao socket 
+4. FileInputStream de doc du lieu tu file 
+5. FileOutputStream de ghi du lieu vao file 
+6. BufferReader de doc du lieu input cua nguoi dung 
+7. Buffer size cua Client va Server can giong nhau. Neu khong khi gui file lon, se gay ra loi
